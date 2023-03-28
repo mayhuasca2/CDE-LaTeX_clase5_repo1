@@ -1,6 +1,6 @@
 \documentclass[]{article}
 
-\usepackage[spanish,english]{babel}
+\usepackage[spanish]{babel}
 
 %para agregar párrafos predifinidos
 \usepackage{lipsum}
@@ -103,7 +103,95 @@ El comando \verb*|cline{i-j}| trazará a línea horizontal entre las columnad de
 
 	\end{itemize}
 
+
+
+
+\subsection {Encolumnar el punto decimal}
+Consideremos que tenemos 4 números punto flotante , donde cada uno de estos números posee una distinta cantidad de cifras en la mantisa: 3.14159, 2.71, 123.4567 y 0.
+\begin{center}
+	\begin{tabular}[]{cc}
+		\hline 
+		Var1 & 3.14159 \\
+		Var2 & 2.71 \\
+		Var3 & 123.4567 \\
+		Var4 & 0 \\
+		\hline	
+			
+		\end{tabular}
+	\end{center}
+
+
 	
+Consideremos arreglar y encolumnar de las ubicación del punto decimal
+\begin{center}
+	\begin{tabular}[]{cr@{.}l}
+		Varios &  cifras & \\
+		\hline 
+		Var1 & 3&14159 \\
+		Var2 & 2&71 \\
+		Var3 & 123&4567 \\
+		Var4 & 0 &\\
+		\hline	
+		
+	\end{tabular}
+\end{center}	
 	
+\section{Construcción de figuras}	
+\lipsum[2-5]
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figure/deepray.jpg}
+	\caption{deep learning para rayos}
+	\label{fig: deep}
+	\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figure/redesray}
+	\caption{redes}
+	\label{fig: rede}
+\end{figure}
+\lipsum[2-5]
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figure/primera}
+	\caption{text}
+	\label{key}
+\end{figure}
+
+
+
+
+%para atblas es table
+	
+\section{Construcción del índice de tablas}	
+\lipsum[12-14]
+\begin{table}[h]
+	\centering
+	\begin{center}
+		\begin{tabular}[]{cr@{.}l}
+			Varios &  cifras & \\
+			\hline 
+			Var1 & 3&14159 \\
+			Var2 & 2&71 \\
+			Var3 & 123&4567 \\
+			Var4 & 0 &\\
+			\hline	
+			
+		\end{tabular}
+	\end{center}	
+\caption{Costos}
+\label{table:1}
+
+\end{table}
+	
+
+	FIN.
+	
+\newpage	
+	\listoftables
+	\listoffigures
+	\tableofcontents
 	
 \end{document}

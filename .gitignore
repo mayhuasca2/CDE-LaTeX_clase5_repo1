@@ -3,3 +3,7 @@
 *.log
 *.PDF
 *.gz
+*.toc
+*.lot
+*.lof
+*.webp
